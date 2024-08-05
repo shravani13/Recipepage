@@ -1,0 +1,131 @@
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    margin:10% 15%;
+    font-size: 16px;
+    /* border: 1px solid blue; */
+}
+@font-face {
+    font-family: 'outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'young-serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+.parent-container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 50px;
+    border-radius: 20px;
+    /*width: 100%;*/
+    /* border: 1px solid red; */
+    /*margin: 100px 200px;*/
+}
+/* #main{
+    background-color: hsl(0, 0%, 100%);
+    padding: 50px;
+    border-radius: 20px;
+} */
+.img-container{
+    background-image: url(./assets/images/image-omelette.jpeg);
+    background-size: cover;
+    background-position: center;
+    height:60vh;
+    width:100%;
+    border-radius: 20px;
+    
+}
+.title-container h1{
+    font-family: young-serif;
+    font-weight: 400;
+    font-size:50px ;
+}
+.title-container p{
+    font-family: outfit;
+    font-size: 16px;
+}
+.list-container{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+    padding: 25px;
+    font-family: outfit;
+}
+.list-container h3{
+    color: hsl(332, 51%, 32%);
+}
+.list-container li::marker{
+    color:hsl(332, 51%, 32%)
+}
+.bold-text{
+    font-weight: bold;
+}
+.table-container{
+    font-family: outfit;
+    /*line-height: 40px;*/
+    font-size: 16px;
+}
+.table-container h3{
+    font-family: young-serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 30px;
+    font-weight: normal;
+}
+.table-container li::marker{
+    color: hsl(14, 45%, 36%);
+}
+li{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.table-container p{
+    font-size: 16px;
+}
+table{
+    border-collapse: collapse;
+}
+
+.border{
+    border-bottom-style: solid; 
+    border-bottom-width:1px; 
+    border-bottom-color: sl(24, 5%, 18%);
+}
+td:nth-of-type(odd){
+    padding-left: 30px; 
+}
+td:nth-of-type(even){
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+td{
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 250px;
+}
+@media (max-width: 375px){
+    body{
+        margin: 0;
+    }
+    .parent-container{
+        border-radius: 0;
+        padding: 0; 
+    }
+    .content-container{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+    .title-container h1{
+        font-size: 35px;
+    }
+    .img-container{
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+    td{
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-right: 60px;
+    }
+}
